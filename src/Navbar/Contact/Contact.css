@@ -1,0 +1,42 @@
+.contact-container{
+    background: #FF512F;
+    margin-top: 2rem;
+    border: 0.01rem solid #ffffff55;
+    border-radius: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.contact-container h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+
+.contact-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.i{
+    margin-right: 2rem;
+    font-size: 3rem;
+    color: #000;
+}
+
+.i:hover{
+    color: #fff;
+    transform: translateY(-10px);
+    transition: all .6s ease;
+}

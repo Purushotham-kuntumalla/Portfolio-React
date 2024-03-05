@@ -27,12 +27,12 @@ const Project = ({ projects }) => {
     {
       name: 'Temperature Converter',
       description: 'A temperature converter that allows users to convert temperatures between different units (Celsius, Fahrenheit). It features a user-friendly interface and illustrates knowledge of JavaScript and DOM manipulation.',
-      link: 'https://purushotham-kuntumalla.github.io/temp-converter/'
+      link: 'https://purushotham-kuntumalla.github.io/Tempo-Converter/'
     },
     {
       name: 'Quiz App',
       description: 'An interactive quiz application that supports multiple-choice questions and provides feedback on user performance.',
-      link: 'https://purushotham-kuntumalla.github.io/QuizApp/'
+      link: 'https://purushotham-kuntumalla.github.io/Quiz-application/'
     },
     {
       name: 'Quote Generator',
@@ -47,7 +47,7 @@ const Project = ({ projects }) => {
     {
       name: 'Todo List JS',
       description: 'A task management application that allows users to add, delete, and mark tasks as completed. It incorporates local storage for persistence.',
-      link: 'https://purushotham-kuntumalla.github.io/Todo-list-JS/'
+      link: 'https://purushotham-kuntumalla.github.io/TodoList/'
     }
   ];
 

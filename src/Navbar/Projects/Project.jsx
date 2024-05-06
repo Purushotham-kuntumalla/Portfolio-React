@@ -66,7 +66,11 @@ const Project = ({ projects }) => {
     },
     {
       name: 'Temperature Converter',
+
       description: 'A temperature converter that allows users to convert temperatures between different units (Celsius, Fahrenheit).',
+
+      description: 'A temperature converter that allows users to convert temperatures between different units (Celsius, Fahrenheit). It features a user-friendly interface and illustrates knowledge of JavaScript and DOM manipulation.',
+
       link: 'https://purushotham-kuntumalla.github.io/Tempo-Converter/'
     },
     {

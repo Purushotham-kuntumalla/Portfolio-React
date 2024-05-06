@@ -1,49 +1,41 @@
+.skills-container{
+    height: auto;
+}
+
 .skills-content{
-   
-    display: flex;
+   /* Making event cards container a flex container */
+  display: flex;
+  /* Allowing horizontal scrolling */
+  overflow-x: scroll;
+  /* Preventing line breaks in text */
+  
+    /* display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 2rem 2rem;
-    padding: 1rem ;
+    padding: 1rem ; */
 }
 
 .p{
     font-size: 1rem;
-    margin-top: 1rem;
+    padding-top: 1rem;
     text-align: center;
-    color: #000;
-    text-decoration: underline;
+    color: #FF512F;
+    text-decoration: none;
 }
-.skills-content::before,
-.skills-content::after{
-    content: "";
-    width: 30rem;
-    height: 30rem;
-    
-    background: #FF512F;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F09819, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F09819, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    border-radius: 28.123rem;
-    position: absolute;
-    z-index: -1;
-    filter: blur(100px);
-}
+
 .skills-card{
     display: flex;
     flex-direction: column;
         align-items: center;
         justify-content: center;
     /* From https://css.glass */
-    width: 15rem;
-   height: 15rem;
+    width: 10rem;
+   height: 13rem;
    margin: 1rem;
-background: rgba(63, 63, 63, 0.14);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(12.3px);
--webkit-backdrop-filter: blur(12.3px);
+   border-radius: 7px;
+
 border: 1px solid rgba(63, 63, 63, 0.97);
 }
 
@@ -60,16 +52,12 @@ border: 1px solid rgba(63, 63, 63, 0.97);
 .skills-card:hover{
     /* From https://css.glass */
     opacity: 1.5;
-background: rgba(255, 255, 255, 0.268);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(214, 206, 206, 0.715);
-backdrop-filter: blur(2.1px);
--webkit-backdrop-filter: blur(2.1px);
-border: 1px solid rgba(255, 255, 255, 0.35);
-
+cursor: pointer;
+    background: #fff;
+    box-shadow: 1px 1px 15px 1px #fff;
 transition: .5s;
 transform: translateY(-10px);
-}
+}   
 
 h5{
     font-size: 2rem;   
@@ -91,14 +79,16 @@ h5{
         justify-content: center;
     }
     .skills-content{
-        flex-direction: column;
+
+        display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+    padding: 1rem ;
+    overflow: hidden;
     }
-    .skills-content::before,
-.skills-content::after{
-    width: 10rem;
-    height: 10rem;
-    bottom: 300px;
-}
+
 }
 
 

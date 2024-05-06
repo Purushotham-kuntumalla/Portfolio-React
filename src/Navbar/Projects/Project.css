@@ -1,25 +1,32 @@
 .experience-card{
-width: 22rem;
-height: 22rem;
-background: rgba(253, 253, 253, 0.14);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(12.3px);
--webkit-backdrop-filter: blur(12.3px);
-border: 1px solid #fff;
-margin: 1rem;
-padding: 1rem;
+width: 18rem;
+height: 18rem;
+opacity: .5;
+border-left: 10px solid #f75961;
+color: #fff;
+margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.3s ease; 
 }
+  .span {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Define the transition property */
+  }
+  
+  .span:hover {
+    transform: scale(1.2); /* Apply the transform on hover */
+  }
 
+
+.project-head{
+    text-align: center;
+}
 .experience-card:hover{
     opacity: 1.5;
-    background: rgba(255, 255, 255, 0.544);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(194, 94, 94, 0.715);
-    backdrop-filter: blur(2.1px);
-    -webkit-backdrop-filter: blur(2.1px);
-    border: 1px solid rgba(255, 255, 255, 0.35);
-    color: rgba(194, 94, 94, 0.715);;
+    background: #3333cc;
     transition: .5s;
     transform: translateY(-10px);
     cursor: pointer;
@@ -31,19 +38,17 @@ section{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
 }
 
 .tp{
-    line-height: 2rem;
-    color: rgba(230, 81, 81, 0.715);;
+    line-height: 1.2rem;
 }
 
 h2{
-    margin: 1rem;
-    color: #000;
-    text-decoration: underline;
-    animation: transform infinite 2s ease-in-out;
+    margin: .5rem;
+    color: #fff;
+    text-decoration: none;
+   font-size: 1.5rem;
 }
 
 
@@ -63,12 +68,9 @@ h2{
     margin-top: 2rem;
 }
 
-.span{
-    font-size: 3rem;
-    animation: trans infinite 2s ease-in backwards ;
-}
+
 a{
-    
+    text-align: center;
     color: #fff;
 }
 
@@ -86,6 +88,8 @@ a{
 @media (max-width:600px) {
     .experience-card{
         height: auto;
+        opacity: 1;
+        background-color: #d63e8f;
     }
 }
 

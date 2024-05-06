@@ -82,7 +82,7 @@
 .tech-icon img {
     width: 3rem;
     height: auto;
-    animation: hu__hu__ infinite 2s ease-in-out
+    /*animation: hu__hu__ infinite 2s ease-in-out*/
 }
 
 
@@ -112,7 +112,7 @@ backdrop-filter: blur( 4px );
 -webkit-backdrop-filter: blur( 4px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
-    animation: animated 5s infinite  ease-out;
+    /* animation: animated 5s infinite  ease-out; */
 }
 
 @keyframes hu__hu__ {

@@ -37,8 +37,40 @@ const Skills = () => {
                                     
                           </div>
                           </div>
+                    </div>
+                    
+                    <div className="skills-card">
+                    <p className='p'>NODEJS</p>
+                          <img className='html' src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/2560px-Node.js_logo.svg.png" alt="" />
+                          <div className="progress-bar">
+                                <div className="progress-h">
+                                    
+                          </div>
+                          </div>
+                    </div>
+                    
+                    <div className="skills-card">
+                    <p className='p'>EXPRESSJS</p>
+                          <img className='html' src="https://markovate.com/wp-content/uploads/2022/06/Is-Express.js-Framework-An-Ideal-Choice-For-Developing-Enterprise-Applications_@2x.png.webp" alt="" />
+                          <div className="progress-bar">
+                                <div className="progress-h">
+                                    
+                          </div>
+                          </div>
+                    </div>
+                    <div className="skills-card">
+                    <p className='p'>GIT & GITHUB</p>
+                          <img className='html' src="https://www.biteinteractive.com/wp-content/uploads/2021/05/git-vs-github.png" alt="" />
+                          <div className="progress-bar">
+                                <div className="progress-h">
+                                    
+                          </div>
+                          </div>
+                    </div>
+
+                    
               </div>
-          </div>
+          
     </section>
   )
 }

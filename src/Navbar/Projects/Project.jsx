@@ -1,8 +1,28 @@
-
 import React from 'react';
-import './Project.css'
-const Project = ({ projects }) => {
+import './Project.css';
+
+const Project = () => {
   const projectData = [
+    {
+      name: 'Axios-based Shopping Cart',
+      description: 'This project is a React-based shopping application that fetches product data from an API and allows users to add items to a cart. It uses the following features and technologies'
+    },
+    {
+      name:'React Image Slider',
+      description:'This project is a React-based image slider component that uses the react-slick library for a smooth and responsive carousel experience. '
+    },
+    {
+      name:'React Login Form',
+      description:"This project is a simple React-based login form that captures user input for a name and password."
+    },
+    {
+      name:"React Data Posting Form",
+      description:"This project is a React-based form for posting user data to a server endpoint."
+    },
+    {
+      name: 'React Profile Card Creator',
+      description:"This project is a React-based application for creating and displaying profile cards."
+  },
     {
       name: 'ReactJs Todo List',
       description: 'A task management application that allows users to add, delete, and mark tasks as completed.',
@@ -10,7 +30,7 @@ const Project = ({ projects }) => {
     },
     {
       name: 'WorkOut Tracker UI',
-      description: 'A Work Out Tracker UI designed by using the HTML5, CSS3 .',
+      description: 'A Work Out Tracker UI designed by using the HTML5, CSS3.',
       link: 'https://purushotham-kuntumalla.github.io/Dacoid-app/'
     },
     {
@@ -20,22 +40,22 @@ const Project = ({ projects }) => {
     },
     {
       name: 'Social Media Application',
-      description: 'Developed a fully functional Social Media web application using HTML, CSS and JavaScript.',
+      description: 'Developed a fully functional Social Media web application using HTML, CSS, and JavaScript.',
       link: 'https://purushotham-kuntumalla.github.io/Social-media/'
     },
     {
       name: 'NodeJS Quiz Application',
-      description: 'Using Nodejs, expressJs created an API designed a responsive Quiz application on Nodejs conceptsoperations. ',
+      description: 'Using Nodejs, expressJs created an API designed a responsive Quiz application on Nodejs conceptsoperations.',
       link: 'https://github.com/Purushotham-kuntumalla/Quiz-Application-Nodejs'
     },
     {
       name: 'BOOK US NOW',
-      description: 'integrated REST APIs to fetch and display recommended and upcoming events data Implemented responsive web design principles ',
+      description: 'Integrated REST APIs to fetch and display recommended and upcoming events data. Implemented responsive web design principles.',
       link: 'https://purushotham-kuntumalla.github.io/Book-Us-Now/'
     },
     {
       name: 'Multi-page Web Application with Express.js',
-      description: 'using Express.js, allowing users to navigate through multiple pages including a Home page, About page, and Login  validation',
+      description: 'Using Express.js, allowing users to navigate through multiple pages including a Home page, About page, and Login validation.',
       link: 'https://github.com/Purushotham-kuntumalla/Food-recipe'
     },
     {
@@ -58,7 +78,6 @@ const Project = ({ projects }) => {
       description: 'An online shopping platform featuring product listings, shopping cart, and checkout functionalities. It utilizes both front-end and back-end development skills.',
       link: 'https://purushotham-kuntumalla.github.io/e_commerce/'
     },
-    
     {
       name: 'Calculator',
       description: 'Basic calculator functionality built using HTML, CSS, and JavaScript. Suitable for simple mathematical calculations.',
@@ -66,11 +85,7 @@ const Project = ({ projects }) => {
     },
     {
       name: 'Temperature Converter',
-
-      description: 'A temperature converter that allows users to convert temperatures between different units (Celsius, Fahrenheit).',
-
       description: 'A temperature converter that allows users to convert temperatures between different units (Celsius, Fahrenheit). It features a user-friendly interface and illustrates knowledge of JavaScript and DOM manipulation.',
-
       link: 'https://purushotham-kuntumalla.github.io/Tempo-Converter/'
     },
     {
@@ -95,35 +110,24 @@ const Project = ({ projects }) => {
     }
   ];
 
-
   return (
     <>
-    <h1 className='project-head'>Projects</h1>
-   
-    <section>
-      
-      {projectData.map((work, idx) => (
-        <div key={idx} className="experience-card">
-          <div className="card">
-          <h2 >{work.name}</h2>
-          <p className='tp'> {work.description}</p>
-            <a href={work.link} target="_blank" rel="noopener noreferrer">
-           
-          <span class="material-symbols-outlined span">
-arrow_forward
-</span>
-
-          </a>
+      <h1 className='project-head'>Projects</h1>
+      <section className='project-section'>
+        {projectData.map((work, idx) => (
+          <div key={idx} className={`project-card project-card-${idx % 4 + 1}`}>
+            <div className="card-content">
+              <h2 className='project-title'>{work.name}</h2>
+              <p className='project-description'>{work.description}</p>
+              <a href={work.link} target="_blank" rel="noopener noreferrer" className='project-link'>
+                <span className="material-symbols-outlined span">
+                  arrow_forward
+                </span>
+              </a>
+            </div>
           </div>
-          
-        </div>
-      ))}
-
-      
-    </section>
-      
-    
-    
+        ))}
+      </section>
     </>
   );
 };

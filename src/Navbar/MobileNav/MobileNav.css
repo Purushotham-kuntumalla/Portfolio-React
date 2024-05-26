@@ -14,12 +14,7 @@
 }
 
 
-.mobile-menu-container{
-    width: 60vw;
-    height: 100vh;
-    background-color: #342864;
-    padding: 2rem;
-}
+
 
 .mobile-menu.active{
     opacity: 1;

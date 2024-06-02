@@ -1,66 +1,75 @@
-.footer-container {
-    
-    color: white;
-    padding: 2rem 1rem;
-    text-align: center;
-    
+/* Contact Form Styles */
+.section-container{
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-container{
+  margin-top: 5rem;
+}
+.img-container{
+  width: 500px;
+}
+.img-container img{
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 500px;
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  border: 2px solid #ffde59;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #000000;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.submit-btn {
+  padding: 0.5rem 2rem;
+  background-color: #ffde59;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e6c44f;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  
-  .footer-content {
-    margin-bottom: 1.5rem;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .footer-content h5 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 700;
-    color: #ffde59;
-  }
-  
-  .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .footer-link {
-    color: #ffde59;
-    text-decoration: none;
-    font-size: 2.5rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-  
-  .footer-link:hover {
-    transform: scale(1.2);
-    color: #ffde59;
-  }
-  
-  .footer-icon {
-    font-size: 4rem;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-bottom {
-    margin-top: 2rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    padding-top: 1rem;
-  }
-  
-  .footer-bottom p {
-    margin: 0;
-    font-size: 1rem;
-    opacity: 0.8;
-  }
-  
-  @media (max-width: 768px) {
-    .footer-content h5 {
-      font-size: 1.5rem;
-    }
-  
-    .footer-icon {
-      font-size: 3rem;
-    }
-  }
-  
+}
+.footer-bottom p{
+text-align: center;
+margin-top: 2rem;
+color: #ffde59;
+font-weight: 500;
+background-color: #000000;
+}
+/* Rest of your existing styles... */

@@ -5,10 +5,9 @@ const Hero = () => {
   return (
     <section className='hero-container'>
       <div className="hero-content">
-        <h2>Hi, I'm Purushotham</h2>
+        <h1>Hi, I'm Purushotham</h1>
         <p>Passionate Developer | Transforming ideas into Seamless and Visually Stunning Web Solutions</p>
       </div>
-
       <div className="hero-img">
         <div className="profile-container">
           <img className='profile' src={process.env.PUBLIC_URL + "/profile.jpg"} alt="Profile" />

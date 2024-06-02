@@ -1,7 +1,19 @@
 import React from 'react';
 import './Project.css';
+import { Tilt } from 'react-tilt';
 
 const Project = () => {
+  const defaultOptions = {
+    reverse: false,
+    max: 25,
+    perspective: 1000,
+    speed: 300,
+    transition: true,
+    axis: null,
+    reset: true,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+  };
+
   const projectData = [
     {
       name: 'Axios-based Shopping Cart',
@@ -22,7 +34,7 @@ const Project = () => {
     {
       name: 'React Profile Card Creator',
       description:"This project is a React-based application for creating and displaying profile cards."
-  },
+    },
     {
       name: 'ReactJs Todo List',
       description: 'A task management application that allows users to add, delete, and mark tasks as completed.',
@@ -115,17 +127,29 @@ const Project = () => {
       <h1 className='project-head'>Projects</h1>
       <section className='project-section'>
         {projectData.map((work, idx) => (
-          <div key={idx} className={`project-card project-card-${idx % 4 + 1}`}>
-            <div className="card-content">
-              <h2 className='project-title'>{work.name}</h2>
-              <p className='project-description'>{work.description}</p>
-              <a href={work.link} target="_blank" rel="noopener noreferrer" className='project-link'>
-                <span className="material-symbols-outlined span">
-                  arrow_forward
-                </span>
-              </a>
+          <Tilt key={idx} options={defaultOptions} style={{ height: 250, width: 300 }}>
+            <div className={`project-card project-card-${idx % 4 + 1}`}>
+              <div className="card-content">
+                <h2 className='project-title'>{work.name}</h2>
+                <p className='project-description'>{work.description}</p>
+                {/* {work.link && (
+                  <a href={work.link} target="_blank" rel="noopener noreferrer" className='project-link'>
+                    <span className="material-symbols-outlined span">
+                      arrow_forward
+                    </span>
+                  </a>
+                )} */}
+
+                {
+                  work.link ? <a href={work.link} target="_blank" rel="noopener noreferrer" className='project-link'>
+                  <span className="material-symbols-outlined span">
+                    arrow_forward
+                  </span>
+                </a> : ''
+                }
+              </div>
             </div>
-          </div>
+          </Tilt>
         ))}
       </section>
     </>

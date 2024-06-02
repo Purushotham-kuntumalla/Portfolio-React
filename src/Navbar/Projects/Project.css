@@ -1,124 +1,124 @@
+/* Main heading styles */
 .project-head {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 700;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #1f1f1f;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+/* Container for project cards */
+.project-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+/* Project card styles */
+.project-card {
+  background: #f5f5f5;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #fafafc6b;
+}
+
+.project-card:hover {
+  background-color: #1d295186;
+  transform: scale(1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+/* Card content styles */
+.card-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Project title styles */
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Project description styles */
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #000080;
+}
+
+/* Project link styles */
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  background: #12c2e9;
+  color: #fff;
+  border-radius: 5rem;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.project-link:hover {
+  background: #0fa7d7;
+}
+
+/* Material icon styles */
+.material-symbols-outlined {
+  font-size: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .project-head {
+    font-size: 2rem;
   }
-  
-  .project-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    padding: 0 2rem;
-  }
-  
+
   .project-card {
-    background: #fff;
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 300px;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
+    width: 90%;
   }
-  
-  .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.1;
-    transition: opacity 0.3s ease;
-  }
-  
-  .project-card-1::before {
-    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-  }
-  
-  .project-card-2::before {
-    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
-  }
-  
-  .project-card-3::before {
-    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
-  }
-  
-  .project-card-4::before {
-    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
-  }
-  
-  .project-card:hover::before {
-    opacity: 0.3;
-  }
-  
-  .card-content {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-  
+
   .project-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #555;
-    font-weight: 600;
+    font-size: 1.25rem;
   }
-  
+
   .project-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-head {
+    font-size: 1.75rem;
+  }
+
+  .project-card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .project-title {
     font-size: 1rem;
-    margin-bottom: 1.5rem;
-    color: #777;
   }
-  
-  .project-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0.5rem 1rem;
-    background: #12c2e9;
-    color: #fff;
-    border-radius: 5rem;
-    text-decoration: none;
-    transition: background 0.3s ease;
+
+  .project-description {
+    font-size: 0.85rem;
   }
-  
-  .project-link:hover {
-    background: #0fa7d7;
-  }
-  
-  .material-symbols-outlined {
-    font-size: 1.5rem;
-  }
-  
-  @media (max-width: 768px) {
-    .project-head {
-      font-size: 2rem;
-    }
-  
-    .project-card {
-      width: 90%;
-    }
-  
-    .project-title {
-      font-size: 1.25rem;
-    }
-  
-    .project-description {
-      font-size: 0.9rem;
-    }
-  }
-  
+}

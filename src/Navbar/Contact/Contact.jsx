@@ -24,7 +24,7 @@ const Contact = () => {
 
   return (
     <footer className="footer-container">
-      <h5>Contact Me</h5>
+      <h5 className='h5'>Contact Me</h5>
       <section className='section-container'>
       <div className="img-container">
         <img src="https://st2.depositphotos.com/1202020/7262/i/450/depositphotos_72629937-stock-photo-tearable-note-summer-job-talent.jpg" alt="" />

@@ -1,5 +1,6 @@
-import React from 'react'
-import './MobileNav.css'
+import React from 'react';
+import './MobileNav.css';
+import {Link } from 'react-router-dom';
 const MobileNav = ({isOpen, toggleMenu}) => {
   return (
       <div className={`mobile-menu ${isOpen ? 'active' : ''}`}
@@ -9,10 +10,10 @@ const MobileNav = ({isOpen, toggleMenu}) => {
           <p className='logo'>Portfolio</p>
 
 <ul>
-    <li><a className='menu-item' href="#">Home</a></li>
-    <li><a className='menu-item' href="#">Skills</a></li>
-    <li><a className='menu-item' href="#">Projects</a></li>
-    <li><a className='menu-item' href="#">Contact Me</a></li>
+    <li><Link className='menu-item' to="/">Home</Link></li>
+    <li><Link className='menu-item' to="/skills">Skills</Link></li>
+    <li><Link className='menu-item' to="/projects">Projects</Link></li>
+    <li><Link className='menu-item' to="/contact">Contact Me</Link></li>
     <button className='contact-btn'>hire Me</button>
 </ul>
       </div>

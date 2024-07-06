@@ -30,7 +30,7 @@ const NavbarF = () => {
             <ul>
               <li>
                 <Link to="/" className="menu-item">
-                  Hero
+                  Home
                 </Link>
               </li>
               <li>

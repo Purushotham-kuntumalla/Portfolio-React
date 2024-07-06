@@ -25,7 +25,11 @@
   width: 500px;
   animation: slideUp 0.5s ease-out forwards;
 }
-
+.h5{
+  color: #e6c44f;
+  font-size: 2rem;
+  text-align: center;
+}
 .contact-form input,
 .contact-form textarea {
   padding: 0.5rem;

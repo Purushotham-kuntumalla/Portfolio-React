@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding: 2rem;
     flex-wrap: wrap;
+    height: 530px;
 }
 
 .hero-content {

@@ -17,9 +17,13 @@ function App() {
     <NavbarF />
       <div className="container">
       <Hero />
-        <Skills />
-        <Project />
-        <Contact />
+        <BrowserRouter>
+          <Routes>
+            <Route path='/skills' element={ < Skills/>} />
+            <Route path='/projects' element={ < Project/>} />
+            <Route path='/contact' element={ < Contact/>} />
+        </Routes>
+        </BrowserRouter>
         
       </div>
 

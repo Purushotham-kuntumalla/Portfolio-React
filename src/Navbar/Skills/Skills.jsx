@@ -34,6 +34,7 @@ const Skills = () => {
 
   return (
     <div className="skills-container">
+    <div className="skills-container">
       <h2 className="skills-title">Skills</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
@@ -50,6 +51,7 @@ const Skills = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

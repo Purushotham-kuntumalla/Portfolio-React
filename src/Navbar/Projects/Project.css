@@ -26,7 +26,6 @@
 .project-card {
   background: linear-gradient(55deg, #071952, #000000);
   padding: 20px;
-  border-left: 8px solid #F4CE14;
   border-radius: 5px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -35,14 +34,14 @@
 
 .project-card:hover {
   transform: translateY(-5px);
- cursor: pointer;
- 
- 
+  cursor: pointer;
+
+
 }
 
 .card-content {
   text-align: left;
-  
+
 }
 
 .project-title {

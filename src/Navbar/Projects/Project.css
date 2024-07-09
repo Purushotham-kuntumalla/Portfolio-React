@@ -54,6 +54,10 @@
 .project-description {
   color: #FFE9D0;
   line-height: 1.5;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: lowercase;
 }
 
 .project-link {
